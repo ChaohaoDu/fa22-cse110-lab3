@@ -1,0 +1,107 @@
+/*This file is for web page*/
+
+h1 {
+  color: #4ce033;
+  text-decoration: underline;
+  max-width: 500px;
+  margin: 1in;
+}
+
+ul > li {
+  text-align: center;
+}
+
+a:hover {
+  font-size: 2rem;
+}
+
+a:active {
+  color: hsl(240, 20%, 50%);
+}
+
+.gap {
+  margin-top: 1cm;
+  margin-bottom: 10mm;
+}
+
+#date {
+  padding-left: 45vw;
+  width: 10%;
+}
+
+summary + nav {
+  padding: 10px;
+}
+
+p {
+  margin: auto 20px;
+}
+
+form {
+  border: 1px solid #c29191;
+}
+
+
+.flex-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: baseline;
+  align-content: center;
+
+  border-radius: 5px 5px 0 0;
+  border-radius: 5px;
+  border-color: aquamarine;
+  border-style: dotted;
+}
+
+.flex-item {
+
+}
+
+
+b {
+  display: block;
+}
+
+
+div span {
+  display: none;
+}
+
+img {
+  height: auto;
+  min-width: 20px;
+}
+
+
+h1 ~ span {
+  color: saddlebrown;
+}
+
+li.leader {
+  color: darkred
+}
+
+.grid-container {
+  display: grid;
+  justify-items: center;
+  align-items: stretch;
+  grid-template-rows: auto 1fr auto;
+}
+
+
+@media screen and (min-width: 400px) {
+  body {
+    background-color: lightgreen;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  body {
+    background-color: lavender;
+  }
+}
+
+a[href="#brainStorm"] {
+  color: red;
+}
