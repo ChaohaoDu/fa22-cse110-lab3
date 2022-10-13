@@ -2,124 +2,138 @@
 <html lang="en">
 
 <head>
-    <title>Pomodoro Timer First Brainstorm</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="./static/favicon.ico" type="image/x-icon">
+  <title>Pomodoro Timer First Brainstorm</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="./static/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="./stylesheet.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sorts+Mill+Goudy&display=swap" rel="stylesheet">
 </head>
+<style>
+  * {
+    font-family: 'Sorts Mill Goudy', serif;
+  }
+</style>
+<body class="grid-container ">
+<header>
+  <details>
+    <summary style="color: rgb(0,0,0)">
+      Want to navigate to each section quickly?
+    </summary>
+    <nav>
+      <a href="#brainStorm">Brainstorm</a>
+      <a href="#check-ins">Check-ins</a>
+      <a href="#documentation">Documentation</a>
+      <a href="#feedback">feedback</a>
+    </nav>
+  </details>
 
-<body>
-    <header>
-        <details>
-            <summary>
-                Want to navigate to each section quickly?
-            </summary>
-            <nav>
-                <a href="#brainStorm">Brainstorm</a>
-                <a href="#check-ins">Check-ins</a>
-                <a href="#documentation">Documentation</a>
-                <a href="#feedback">feedback</a>
-            </nav>
-        </details>
+</header>
 
-    </header>
+<main>
+  <h1>Pomodoro Timer First Brainstorm</h1>
+  <span id="date">Oct 5, 2022</span>
+  <div>
+    <span>You could NOT see me!</span>
+  </div>
 
-    <main>
-        <h1>Pomodoro Timer First Brainstorm</h1>
-        <span>Oct 5, 2022</span>
-        <section id="check-ins">
-            <h2>Check-ins</h2>
-            <ol>
-                <li>Leader
-                    <ul>
-                        <li>Will</li>
-                        <li>Alison - <em>TA</em></li>
-                    </ul>
-                </li>
-                <li> Member
-                    <ul>
-                        <li>Ryan</li>
-                        <li>Chuning</li>
-                        <li>Justin</li>
-                        <li>Jacky</li>
-                        <li>Mingyi</li>
-                        <li>Randi</li>
-                        <li>Vladimir</li>
-                    </ul>
-                </li>
-            </ol>
-        </section>
-        <hr>
-        <section>
-            <h2 id="brainStorm">Brainstorm</h2>
-            <div>
-                <p>Justin plans to build a backend project, which is a <b>global</b> server that allows all the people
-                    around the world can play <i>LOL</i> in a single server.</p>
-                <p>Jacky hopes to create a video game from the scratch.</p>
-            </div>
-        </section>
-        <hr>
+  <section id="check-ins">
+    <h2>Check-ins</h2>
+    <ol>
+      <li>Leader
+        <ul>
+          <li class="leader">Will</li>
+          <li>Alison - <em>TA</em></li>
+        </ul>
+      </li>
+      <li> Member
+        <ul>
+          <li>Ryan</li>
+          <li>Chuning</li>
+          <li>Justin</li>
+          <li>Jacky</li>
+          <li>Mingyi</li>
+          <li>Randi</li>
+          <li>Vladimir</li>
+        </ul>
+      </li>
+    </ol>
+  </section>
+  <hr class="gap">
+  <section>
+    <h2 id="brainStorm">Brainstorm</h2>
+    <div class="flex-container">
+      <p>
+        Justin plans to build a backend project, which is a <b>global</b> server that allows all the people
+        around the world can play <i>LOL</i> in a single server.</p>
+      <p>Jacky hopes to create a video game from the scratch.</p>
+      <p>Ryan would like to a build coffee order app like the mobile order app on campus.</p>
+    </div>
+  </section>
+  <hr class="gap">
 
-        <section>
-            <h2 id="documentation">Documentation</h2>
-            <p>We introduced ourselves in turn and had a good time at playing the <strong>skribbl.io</strong> as
-                icebreaker at the beginning of the meeting.</p>
-            <p>And then we started to Brainstorm and some guy proposed some real cool ideas.</p>
-            <p>At the end, we took a group picture!</p>
-            <img src="./static/group_pic.jpg" alt="group pictures" width="200">
+  <section>
+    <h2 id="documentation">Documentation</h2>
+    <p>We introduced ourselves in turn and had a good time at playing the <strong>skribbl.io</strong> as
+      icebreaker at the beginning of the meeting.</p>
+    <p>And then we started to Brainstorm and some guy proposed some real cool ideas.</p>
+    <p>At the end, we took a group picture!</p>
+    <img src="./static/group_pic.jpg" alt="group pictures" width="200">
 
-            <p>And here are the music and video we played during the meeting.</p>
-            <audio src="./static/rickroll.mp3" controls></audio>
-            <video src="./static/rickroll.webm" controls></video>
-        </section>
-        <hr>
+    <p>And here are the music and video we played during the meeting.</p>
+    <audio src="./static/rickroll.mp3" controls></audio>
+    <video src="./static/rickroll.webm" controls></video>
+  </section>
+  <hr class="gap">
 
 
-        <section id="feedback">
-            <h3>feedback</h3>
-            <form>
-                <label for="name">Name:</label>
-                <input type="text" id="name">
-                <fieldset>
-                    <legend>What is your role?</legend>
+  <section id="feedback">
+    <h3>feedback</h3>
+    <form>
+      <label for="name">Name:</label>
+      <input type="text" id="name">
+      <fieldset>
+        <legend>What is your role?</legend>
 
-                    <input type="radio" id="leader" name="leader" value="leader">
-                    <label for="leader">Leader</label><br>
+        <input type="radio" id="leader" name="leader" value="leader">
+        <label for="leader">Leader</label><br>
 
-                    <input type="radio" id="teammate" name="teammate" value="teammate">
-                    <label for="teammate">Teammate</label><br>
-                </fieldset>
+        <input type="radio" id="teammate" name="teammate" value="teammate">
+        <label for="teammate">Teammate</label><br>
+      </fieldset>
 
-                <label for="college">College</label>
-                <input list="college-choice" id="college" name="college">
-                <datalist id="college-choice">
-                    <option value="Revelle">
-                    <option value="John Muir">
-                    <option value="Thurgood Marshall">
-                    <option value="Earl Warren">
-                    <option value="ERC">
-                    <option value="Sixth">
-                    <option value="Seventh">
-                </datalist>
-                <br>
+      <label for="college">College</label>
+      <input list="college-choice" id="college" name="college">
+      <datalist id="college-choice">
+        <option value="Revelle">
+        <option value="John Muir">
+        <option value="Thurgood Marshall">
+        <option value="Earl Warren">
+        <option value="ERC">
+        <option value="Sixth">
+        <option value="Seventh">
+      </datalist>
+      <br>
 
-                <label for="category">category</label>
-                <select name="category" id="category">
-                    <option value="Suggestion">Suggestion</option>
-                    <option value="">Suggestion</option>
-                </select>
-                <br>
+      <label for="category">category</label>
+      <select name="category" id="category">
+        <option value="Suggestion">Suggestion</option>
+        <option value="">Suggestion</option>
+      </select>
+      <br>
 
-                <label for="comment">Comment:</label>
-                <textarea name="comment" id="comment" cols="30" rows="10"></textarea>
+      <label for="comment">Comment:</label>
+      <textarea name="comment" id="comment" cols="30" rows="10"></textarea>
 
-                <button>Submit</button>
-            </form>
-        </section>
-    </main>
+      <button>Submit</button>
+    </form>
+  </section>
+</main>
 
-    <footer>
-        Chaohao Du @ 2022
-    </footer>
+<footer>
+  Chaohao Du @ 2022
+</footer>
 </body>
 
 </html>

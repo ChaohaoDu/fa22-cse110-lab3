@@ -1,3 +1,3 @@
-# Lab 2 - Starter
+# Lab 3
 
-Live site [Click here](https://chaohaodu.github.io/fa22-cse110-lab3/)
+Live site [Click here](https://chaohaodu.github.io/Lab2_Starter/)
